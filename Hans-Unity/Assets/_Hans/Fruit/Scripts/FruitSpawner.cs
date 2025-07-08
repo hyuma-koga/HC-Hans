@@ -13,6 +13,7 @@ public class FruitSpawner : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
+
         if (timer >= spawnInterval)
         {
             SpawnFruit();
