@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c9f65c7457f9089438b8336c84da55d0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9f65c7457f9089438b8336c84da55d0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9f65c7457f9089438b8336c84da55d0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9f65c7457f9089438b8336c84da55d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -83,8 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2bb7566b0b9344da95c203c4913d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHalfPrefab: {fileID: 7883268575448248096, guid: 21570adae993f6b41a5ea8e2563ca6a4, type: 3}
-  rightHalfPrefab: {fileID: 8823219108876977325, guid: 216585581e53c884b90dc8d00ccce2dc, type: 3}
+  pb_leftHalf: {fileID: 7883268575448248096, guid: 21570adae993f6b41a5ea8e2563ca6a4, type: 3}
+  pb_rightHalf: {fileID: 8823219108876977325, guid: 216585581e53c884b90dc8d00ccce2dc, type: 3}
+  splitForce: 1.5
 --- !u!136 &6858830201435409663
 CapsuleCollider:
   m_ObjectHideFlags: 0

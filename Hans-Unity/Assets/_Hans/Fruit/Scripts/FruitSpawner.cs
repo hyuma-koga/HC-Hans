@@ -24,7 +24,11 @@ public class FruitSpawner : MonoBehaviour
     private void SpawnFruit()
     {
         Transform spawnPoint = Random.value > 0.5f ? leftSpawnPoint : rightSpawnPoint;
-        FruitBase fruit = fruitFactory.CreateFruit("Watermelon", spawnPoint.position);
+
+        // ƒ‰ƒ“ƒ_ƒ€‚É‰Ê•¨‚ÌŽí—Þ‚ð‘I‚Ô
+        string fruitType = Random.value > 0.5f ? "Watermelon" : "Orenge";
+
+        FruitBase fruit = fruitFactory.CreateFruit(fruitType, spawnPoint.position);
 
         if (fruit != null)
         {

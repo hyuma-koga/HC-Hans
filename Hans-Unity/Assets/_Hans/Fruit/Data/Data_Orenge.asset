@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0cf0a123aeee574b8539248b0343cfc, type: 3}
-  m_Name: Factory_Fruit
+  m_Script: {fileID: 11500000, guid: 24036558d60a2b34a803cc0da6e62aa0, type: 3}
+  m_Name: Data_Orenge
   m_EditorClassIdentifier: 
-  fruitDatas:
-  - {fileID: 11400000, guid: 879c8b576c5536e44b5c2152b51ce847, type: 2}
-  - {fileID: 11400000, guid: 9c6378d82d5598a4fb457100ef042c2f, type: 2}
+  fruitType: Orenge
+  prefab: {fileID: 3562334520139564280, guid: f2e68de92582c8042bc93bb5700a9679, type: 3}

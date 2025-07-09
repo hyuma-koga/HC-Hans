@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Watermelon : FruitBase
+public class Orenge : FruitBase
 {
     [SerializeField] private GameObject pb_leftHalf;
     [SerializeField] private GameObject pb_rightHalf;
