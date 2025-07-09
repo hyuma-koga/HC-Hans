@@ -12,6 +12,11 @@ public class FruitSpawner : MonoBehaviour
 
     private void Update()
     {
+        if (!GameManager.Instance.IsGameStarted)
+        {
+            return;
+        }
+
         timer += Time.deltaTime;
 
         if (timer >= spawnInterval)
@@ -24,8 +29,6 @@ public class FruitSpawner : MonoBehaviour
     private void SpawnFruit()
     {
         Transform spawnPoint = Random.value > 0.5f ? leftSpawnPoint : rightSpawnPoint;
-
-        // ƒ‰ƒ“ƒ_ƒ€‚É‰Ê•¨‚ÌŽí—Þ‚ð‘I‚Ô
         string fruitType = Random.value > 0.5f ? "Watermelon" : "Orenge";
 
         FruitBase fruit = fruitFactory.CreateFruit(fruitType, spawnPoint.position);

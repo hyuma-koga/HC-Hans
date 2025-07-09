@@ -25,5 +25,7 @@ public class Orenge : FruitBase
         rightRb.AddForce((cutDirection + Vector3.right * 0.5f + Vector3.down * 0.5f) * splitForce, ForceMode.Impulse);
 
         Destroy(gameObject);
+
+        GameManager.Instance.AddScore(1);
     }
 }

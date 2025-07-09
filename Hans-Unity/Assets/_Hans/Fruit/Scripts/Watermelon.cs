@@ -5,6 +5,7 @@ public class Watermelon : FruitBase
     [SerializeField] private GameObject pb_leftHalf;
     [SerializeField] private GameObject pb_rightHalf;
     [SerializeField] private float      splitForce = 1.5f;
+    [SerializeField] private bool       isTitleWatermelon = false;
 
     public override void Launch(Vector3 direction, float force)
     {
@@ -25,5 +26,14 @@ public class Watermelon : FruitBase
         rightRb.AddForce((cutDirection + Vector3.right * 0.5f + Vector3.down * 0.5f) * splitForce, ForceMode.Impulse);
 
         Destroy(gameObject);
+
+        if (isTitleWatermelon)
+        {
+            GameManager.Instance.StartGame();
+        }
+        else
+        {
+            GameManager.Instance.AddScore(1);
+        }
     }
 }
