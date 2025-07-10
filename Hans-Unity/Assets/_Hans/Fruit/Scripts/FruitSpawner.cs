@@ -8,6 +8,7 @@ public class FruitSpawner : MonoBehaviour
     public float        spawnInterval = 2f;
     public float        minForce = 4f;
     public float        maxForce = 7f;
+
     private float       timer = 0;
 
     private void Update()
@@ -29,7 +30,22 @@ public class FruitSpawner : MonoBehaviour
     private void SpawnFruit()
     {
         Transform spawnPoint = Random.value > 0.5f ? leftSpawnPoint : rightSpawnPoint;
-        string fruitType = Random.value > 0.5f ? "Watermelon" : "Orenge";
+
+        float r = Random.value;
+        string fruitType;
+
+        if (r < 0.45f)
+        {
+            fruitType = "Watermelon";
+        }
+        else if (r < 0.9f)
+        {
+            fruitType = "Orenge";
+        }
+        else
+        {
+            fruitType = "Bomb";
+        }
 
         FruitBase fruit = fruitFactory.CreateFruit(fruitType, spawnPoint.position);
 

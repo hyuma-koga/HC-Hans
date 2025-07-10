@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WatermelonRotator : MonoBehaviour
+public class FruitRotator : MonoBehaviour
 {
     public float rotateSpeedX = 50f;
     public float rotateSpeedY = 50f;
