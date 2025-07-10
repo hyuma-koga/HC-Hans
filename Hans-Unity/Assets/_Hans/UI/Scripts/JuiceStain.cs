@@ -4,11 +4,10 @@ using System.Collections;
 public class JuiceStain : MonoBehaviour
 {
     private Material mat;
-    private Color originalColor;
+    private Color    originalColor;
 
     private void Awake()
     {
-        // MeshRenderer ‚©‚çƒ}ƒeƒŠƒAƒ‹‚ðŽæ“¾
         mat = GetComponent<MeshRenderer>().material;
         originalColor = mat.color;
     }

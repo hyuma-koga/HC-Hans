@@ -29,32 +29,36 @@ public class FruitSpawner : MonoBehaviour
 
     private void SpawnFruit()
     {
-        Transform spawnPoint = Random.value > 0.5f ? leftSpawnPoint : rightSpawnPoint;
+        int fruitsPerSpawn = Random.Range(1, 3);
 
-        float r = Random.value;
-        string fruitType;
+        for (int i = 0; i < fruitsPerSpawn; i++)
+        {
+            Transform spawnPoint = Random.value > 0.5f ? leftSpawnPoint : rightSpawnPoint;
+            float r = Random.value;
+            string fruitType;
 
-        if (r < 0.45f)
-        {
-            fruitType = "Watermelon";
-        }
-        else if (r < 0.9f)
-        {
-            fruitType = "Orenge";
-        }
-        else
-        {
-            fruitType = "Bomb";
-        }
+            if (r < 0.45f)
+            {
+                fruitType = "Watermelon";
+            }
+            else if (r < 0.9f)
+            {
+                fruitType = "Orenge";
+            }
+            else
+            {
+                fruitType = "Bomb";
+            }
 
-        FruitBase fruit = fruitFactory.CreateFruit(fruitType, spawnPoint.position);
+            FruitBase fruit = fruitFactory.CreateFruit(fruitType, spawnPoint.position);
 
-        if (fruit != null)
-        {
-            Vector3 center = new Vector3(0, 3f, 0);
-            Vector3 direction = (center - spawnPoint.position).normalized;
-            float force = Random.Range(minForce, maxForce);
-            fruit.Launch(direction, force);
+            if (fruit != null)
+            {
+                Vector3 center = new Vector3(0, 3f, 0);
+                Vector3 direction = (center - spawnPoint.position).normalized;
+                float force = Random.Range(minForce, maxForce);
+                fruit.Launch(direction, force);
+            }
         }
     }
 }

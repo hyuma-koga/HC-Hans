@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         ResetScore();
         ResetHP();
 
-        Time.timeScale = 0.7f;
+        Time.timeScale = 0.65f;
         StartCoroutine(StartGameSequence());
     }
 
@@ -78,11 +78,10 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         readyUI.SetActive(false);
-
         goUI.SetActive(true);
+
         yield return new WaitForSeconds(1f);
         goUI.SetActive(false);
-
         IsGameStarted = true;
     }
 
@@ -125,7 +124,6 @@ public class GameManager : MonoBehaviour
     {
         hp--;
         UpdateHPImages();
-
         ShowMissImage();
 
         if (hp <= 0)

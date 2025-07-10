@@ -15,8 +15,6 @@ public class FruitFactory : ScriptableObject
                 return obj.GetComponent<FruitBase>();
             }
         }
-
-        Debug.LogError($"Fruit type not found: {fruitType}");
         return null;
     }
 }

@@ -2245,7 +2245,7 @@ MonoBehaviour:
   leftSpawnPoint: {fileID: 225395349}
   rightSpawnPoint: {fileID: 878751877}
   spawnInterval: 2
-  minForce: 2
+  minForce: 2.5
   maxForce: 4
 --- !u!1 &1321062655
 GameObject:

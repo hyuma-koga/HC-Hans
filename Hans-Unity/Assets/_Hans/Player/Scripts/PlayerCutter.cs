@@ -13,7 +13,6 @@ public class PlayerCutter : MonoBehaviour
     {
         lineRenderer = gameObject.AddComponent<LineRenderer>();
         lineRenderer.positionCount = 0;
-
         lineRenderer.material = new Material(Shader.Find("Legacy Shaders/Particles/Additive"));
 
         lineRenderer.widthCurve = new AnimationCurve(
@@ -22,6 +21,7 @@ public class PlayerCutter : MonoBehaviour
         );
 
         Gradient gradient = new Gradient();
+
         gradient.SetKeys(
             new GradientColorKey[]
             {
@@ -36,8 +36,8 @@ public class PlayerCutter : MonoBehaviour
             new GradientAlphaKey(0.0f, 1.0f)
             }
         );
-        lineRenderer.colorGradient = gradient;
 
+        lineRenderer.colorGradient = gradient;
         lineRenderer.numCapVertices = 5;
     }
 
@@ -51,7 +51,6 @@ public class PlayerCutter : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 currentMousePos = Input.mousePosition;
-
             Ray ray = Camera.main.ScreenPointToRay(currentMousePos);
 
             if (Physics.Raycast(ray, out RaycastHit hit))
