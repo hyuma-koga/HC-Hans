@@ -3701,6 +3701,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3574488801350846343, guid: 12364ba4a06fb174f8d32efb97dd56d4, type: 3}
+      propertyPath: juiceStainPrefab
+      value: 
+      objectReference: {fileID: 5411156002924384381, guid: 1dff9c6a5f52bdc4ab674520376abbcb, type: 3}
+    - target: {fileID: 3574488801350846343, guid: 12364ba4a06fb174f8d32efb97dd56d4, type: 3}
+      propertyPath: juiceSplashPrefab
+      value: 
+      objectReference: {fileID: 8122244468468417223, guid: 583970d1d967a0c46a88678b94d0544a, type: 3}
     - target: {fileID: 3701923456565770849, guid: 12364ba4a06fb174f8d32efb97dd56d4, type: 3}
       propertyPath: m_Name
       value: TitleWatermelon
@@ -3787,6 +3795,14 @@ PrefabInstance:
       propertyPath: pb_rightHalf
       value: 
       objectReference: {fileID: 8823219108876977325, guid: 216585581e53c884b90dc8d00ccce2dc, type: 3}
+    - target: {fileID: 1409527302522915368, guid: 48076b3b49c30f049b7ad2e320133b1a, type: 3}
+      propertyPath: juiceStainPrefab
+      value: 
+      objectReference: {fileID: 5411156002924384381, guid: 1dff9c6a5f52bdc4ab674520376abbcb, type: 3}
+    - target: {fileID: 1409527302522915368, guid: 48076b3b49c30f049b7ad2e320133b1a, type: 3}
+      propertyPath: juiceSplashPrefab
+      value: 
+      objectReference: {fileID: 8122244468468417223, guid: 583970d1d967a0c46a88678b94d0544a, type: 3}
     - target: {fileID: 1974463681715431744, guid: 48076b3b49c30f049b7ad2e320133b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.57686424

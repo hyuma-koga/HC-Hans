@@ -153,4 +153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pb_leftHalf: {fileID: 2892389805457798683, guid: 00ab289481eaba246a91171db29e9d9f, type: 3}
   pb_rightHalf: {fileID: 2892389805457798683, guid: f6e9d2a3190ba9c48862e79e104c401c, type: 3}
+  juiceSplashPrefab: {fileID: 8122244468468417223, guid: b31415bb3a92127428de215f8a7ab05e, type: 3}
+  juiceStainPrefab: {fileID: 5411156002924384381, guid: 412825883e10b224d96a561216769c19, type: 3}
   splitForce: 1.5

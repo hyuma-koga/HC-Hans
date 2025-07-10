@@ -97,7 +97,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pb_leftHalf: {fileID: 7883268575448248096, guid: 21570adae993f6b41a5ea8e2563ca6a4, type: 3}
   pb_rightHalf: {fileID: 8823219108876977325, guid: 216585581e53c884b90dc8d00ccce2dc, type: 3}
+  juiceSplashPrefab: {fileID: 8122244468468417223, guid: 583970d1d967a0c46a88678b94d0544a, type: 3}
+  juiceStainPrefab: {fileID: 5411156002924384381, guid: 1dff9c6a5f52bdc4ab674520376abbcb, type: 3}
   splitForce: 1.5
+  isTitleWatermelon: 0
 --- !u!136 &6858830201435409663
 CapsuleCollider:
   m_ObjectHideFlags: 0

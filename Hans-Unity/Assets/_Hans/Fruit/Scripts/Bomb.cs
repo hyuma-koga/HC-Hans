@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bomb : FruitBase
 {
-    [SerializeField] private float splitForce = 1.5f;
+    //[SerializeField] private float splitForce = 1.5f;
 
     public override void Launch(Vector3 direction, float force)
     {
