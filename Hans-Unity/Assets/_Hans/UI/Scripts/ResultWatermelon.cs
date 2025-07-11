@@ -6,7 +6,7 @@ public class ResultWatermelon : FruitBase
     [SerializeField] private GameObject pb_rightHalf;
     [SerializeField] private GameObject juiceSplashPrefab;
     [SerializeField] private GameObject juiceStainPrefab;
-    [SerializeField] private float splitForce = 1.5f;
+    [SerializeField] private float      splitForce = 1.5f;
 
     public override void Launch(Vector3 direction, float force)
     {
